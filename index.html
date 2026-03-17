@@ -81,9 +81,9 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-      align-items: start;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 2rem;
+      align-items: center;
     }
 
     h1 {
@@ -126,19 +126,17 @@
     }
 
     .hero-logo {
-      background: transparent;
-      border: 0;
-      border-radius: 0;
-      padding: 0;
-      text-align: left;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 1.5rem;
+      text-align: center;
     }
 
     .hero-logo img {
       width: 100%;
-      max-width: 900px;
+      max-width: 760px;
       height: auto;
-      display: block;
-      margin-bottom: 0.5rem;
     }
 
     section {
@@ -231,7 +229,23 @@
   <main id="top">
     <section class="hero">
       <div class="container hero-grid">
+        <div>
+          <h1>Independent network architecture and cyber security consultancy.</h1>
+          <p class="lead">
+            Nick Johnson Consultancy Ltd provides specialist support to enterprise and mid-market organisations across network architecture, cyber security, firewall transformation, SD-WAN, Zero Trust / ZTNA, wireless, cloud connectivity, and technical assurance.
+          </p>
+          <p class="lead">
+            Engagements are delivered on a project, advisory, or outcome basis, with a focus on clear documentation, pragmatic advice, and real-world delivery.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="mailto:nick@j0hns0n.com">Contact</a>
+            <a class="button secondary" href="#services">View services</a>
+          </div>
         </div>
+        <div class="hero-logo">
+          <img src="./NJC Logo 2026 (transparent).png" alt="Nick Johnson Consultancy logo" />
+        </div>
+      </div>
     </section>
 
     <section id="services">
